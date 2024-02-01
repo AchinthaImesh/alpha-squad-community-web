@@ -1,0 +1,372 @@
+.profile_logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* Chat page */
+
+.user {
+    position: absolute;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #16202b;
+    transition: 0.2s;
+    border-right: 1px solid #080a0c;
+}
+.user .user-info {
+    border-bottom: 1px solid rgb(3, 0, 29);
+    margin: 8px 10px 10px 20px;
+    padding-bottom: 10px;
+}
+.user .user-info i {
+    color: rgb(122, 120, 120);
+    float: right;
+}
+.user .user-info i:hover {
+    color: white;
+}
+.user .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 1000px;
+    margin-bottom: 10px;
+}
+.user .user-info span {
+    color: white;
+}
+.user .list-item {
+    width: 100%;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+.user .list-item i {
+    color: white;
+    margin-right: 15px;
+}
+.user .list-item button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.user .list-item:hover {
+    background: #4f525342;
+}
+.sideBar {
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #16202b;
+    width: 300px;
+    transition: 0.2s;
+    height: 100vh;
+    border-right: 1px solid #080a0c;
+}
+.sideBar .searchBar {
+    display: flex;
+    align-items: center;
+    margin: 10px 5px 8px 15px;
+    height: 45px;
+}
+.sideBar .searchBar input {
+    width: 210px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(52, 52, 56);
+    border: none;
+    outline: none;
+}
+.sideBar .searchBar i {
+    color: rgb(122, 120, 120);
+    font-size: 18px;
+    margin-right: 20px;
+}
+.sideBar .searchBar i:hover {
+    color: white;
+}
+.sideBar .users-list {
+    position: relative;
+    z-index: 1;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    height: calc(100vh - 65px);
+}
+.sideBar .users-list:hover {
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    position: relative;
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 0;
+}
+.sideBar .users-list .user-link {
+    height: 70px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: transparent;
+}
+.sideBar .users-list .user-link:hover {
+    background-color: #252f3c;
+}
+.sideBar .users-list .user-link:hover {
+    background-color: #252f3c;
+}
+
+.sideBar .users-list form {
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.users-list form .content {
+    display: flex;
+}
+.users-list form .content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.users-list form .content .details span {
+    color: white;
+    font-size: 15px;
+}
+.users-list form .content .details p {
+    font-size: 12px;
+    color: rgb(114, 113, 113);
+}
+.users-list p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 18px;
+}
+
+.sideBar .users-list a {
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.users-list a .content {
+    display: flex;
+}
+.users-list a .content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.users-list a .content .details span {
+    color: white;
+    font-size: 15px;
+}
+.users-list a .content .details p {
+    font-size: 12px;
+    color: rgb(114, 113, 113);
+}
+
+.chat-area {
+    position: absolute;
+    left: 300px;
+    background: #0e1720;
+    width: calc(100% - 300px);
+    height: 100vh;
+    overflow: auto;
+}
+.chat-area .msg {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 1px;
+    border-radius: 15px;
+    background-color: rgb(78, 76, 76);
+}
+.chat-area .header {
+    display: none;
+    height: 50px;
+    background: #17212b;
+}
+.chat-area span {
+    margin: 5px 0 0 10px;
+    color: white;
+}
+.chat-area .header p {
+    color: rgb(116, 116, 122);
+    font-size: 12px;
+    margin-left: 10px;
+}
+.chat-area .chat {
+    display: none;
+    position: absolute;
+    top: 50px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    overflow: auto;
+    color: white;
+    margin-bottom: 10px;
+}
+.chat-area .chat .incoming-msg {
+    width: fit-content;
+    max-width: 70%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.chat-area .chat .incoming-msg p {
+    word-wrap: break-word;
+    text-align: left;
+    width: auto;
+    border-radius: 8px;
+    border: 1px 0 0 2px solid;
+    padding: 5px 70px 5px 15px;
+    background: #192532;
+    margin-bottom: 2px;
+}
+.chat-area .chat .incoming-msg span {
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    font-size: 12px;
+    color: rgb(121, 121, 126);
+}
+.chat-area .chat .outgoing-msg {
+    width: fit-content;
+    max-width: 70%;
+    justify-self: flex-end;
+    position: relative;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 8px;
+}
+.chat-area .chat .outgoing-msg p {
+    word-wrap: break-word;
+    text-align: left;
+    width: auto;
+    border-radius: 8px;
+    padding: 5px 70px 5px 15px;
+    background: #2b5379;
+    margin-bottom: 2px;
+}
+.chat-area .chat .outgoing-msg span {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 12px;
+    color: rgb(165, 175, 180);
+}
+.chat-area .footer {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background: #17212b;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-area .footer input {
+    height: inherit;
+    margin-left: 50px;
+    width: 100%;
+    max-height: 300px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+}
+.chat-area .footer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: auto;
+}
+.chat-area .footer i {
+    color: rgb(122, 120, 120);
+    font-size: 23px;
+    margin-right: 10px;
+}
+.chat-area .footer i:hover {
+    color: #fff;
+}
+
+.manage {
+    border: 1px solid, black;
+    background: rgb(143, 135, 135);
+}
+
+/* @media(max-width: 700px){
+    .sideBar{
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+    .chat-area{
+        display: none;
+    }
+    .sideBar .searchBar{
+        position: relative;
+        float: right;
+    }
+    .sideBar .searchBar input{
+        display: none;
+    }
+    .sideBar .searchBar i{
+        color: rgb(122, 120, 120);
+    }
+    .sideBar .users-list{
+        align-items: flex-end;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+    }
+    .users-list a .content img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+    .users-list a .content .details span{
+        color: white;
+        font-size: 15px;
+    }
+    .users-list a .content .details p{
+        font-size: 12px;
+        color: rgb(114, 113, 113);
+    }
+} */
